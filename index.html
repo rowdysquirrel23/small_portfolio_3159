@@ -8,34 +8,45 @@
 </head>
 <body>
     <div class="calculator_container">
+      <!-- Input form for calculator -->
         <h1>Mortgage Calculator</h1>
         <form id="mortgage_form">
+          <!-- Input for form -->
           <div class="input_section">
             <label for="housePrice">House Purchase Price (£):</label>
             <input type="number" id="house_price" required>
           </div>
+          <!-- Input for form -->
           <div class="input_section">
             <label for="deposit">Deposit (£):</label>
             <input type="number" id="deposit" required>
           </div>
+          <!-- Input for form -->
           <div class="input_section">
             <label for="interestRate">Interest Rate (%):</label>
             <input type="number" id="interest_rate" step="0.01" required>
           </div>
+          <!-- Input for form -->
           <div class="input_section">
             <label for="mortgageTerm">Mortgage Term (Years):</label>
             <input type="number" id="mortgage_term" required>
           </div>
+          <!-- Input for form -->
           <div class="input_section">
             <label>
               <input type="checkbox" id="data_checkbox">
               I allow the use of my data to calculate.
             </label>
           </div>
+          <!-- Submit button -->
           <button type="submit">Calculate</button>
         </form>
+        <!-- Display results -->
         <div id="result"></div>
         <canvas id="payment_chart"></canvas>
       </div>
+      <!-- Chart display -->
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="script.js"></script>
 </body>
 </html>

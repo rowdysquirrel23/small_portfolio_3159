@@ -1,15 +1,17 @@
 body {
+  /* Basic CSS font added to keep with simple design style */
     font-family: Arial, sans-serif;
   }
-  
+  /* Create the size of the container */
   .calculator_container {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
+    /* Curved edges added to container */
     border-radius: 5px;
   }
-  
+  /* Styling inputs */
   .input_section {
     margin-bottom: 15px;
     padding-right: 15px;
@@ -20,14 +22,14 @@ body {
     display: block;
     margin-bottom: 5px;
   }
-  
+  /* Styling input types */
   input[type="number"],
   input[type="checkbox"] {
     width: 100%;
     padding: 8px;
     font-size: 16px;
   }
-  
+  /* Style the buttons */
   button {
     padding: 10px 20px;
     background-color: #007bff;
@@ -37,7 +39,7 @@ body {
     font-size: 16px;
     cursor: pointer;
   }
-  
+  /* Change shade of blue on hover */
   button:hover {
     background-color: #0056b3;
   }
